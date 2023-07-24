@@ -1,0 +1,71 @@
+#! c:/iverilog-x64/bin/vvp
+:ivl_version "10.1 (stable)" "(v10_1_1)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0000000002867bd0 .scope module, "t_Lab2_half_sub" "t_Lab2_half_sub" 2 1;
+ .timescale 0 0;
+v000000000089e760_0 .var "a", 0 0;
+v00000000028ba9d0_0 .var "b", 0 0;
+v00000000028baa70_0 .net "bout", 0 0, L_00000000028bac20;  1 drivers
+v00000000028bab10_0 .net "diff", 0 0, L_0000000002832ee0;  1 drivers
+S_000000000089e400 .scope module, "M1" "Lab2_half_sub_gatelevel" 2 4, 3 1 0, S_0000000002867bd0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a"
+    .port_info 1 /INPUT 1 "b"
+    .port_info 2 /OUTPUT 1 "diff"
+    .port_info 3 /OUTPUT 1 "bout"
+L_0000000002832ee0/d .functor XOR 1, v000000000089e760_0, v00000000028ba9d0_0, C4<0>, C4<0>;
+L_0000000002832ee0 .delay 1 (4,4,4) L_0000000002832ee0/d;
+L_00000000028babb0 .functor NOT 1, v000000000089e760_0, C4<0>, C4<0>, C4<0>;
+L_00000000028bac20/d .functor AND 1, L_00000000028babb0, v00000000028ba9d0_0, C4<1>, C4<1>;
+L_00000000028bac20 .delay 1 (2,2,2) L_00000000028bac20/d;
+v0000000002867d50_0 .net "a", 0 0, v000000000089e760_0;  1 drivers
+v0000000002866ba0_0 .net "a_not", 0 0, L_00000000028babb0;  1 drivers
+v000000000089e580_0 .net "b", 0 0, v00000000028ba9d0_0;  1 drivers
+v000000000089e620_0 .net "bout", 0 0, L_00000000028bac20;  alias, 1 drivers
+v000000000089e6c0_0 .net "diff", 0 0, L_0000000002832ee0;  alias, 1 drivers
+    .scope S_0000000002867bd0;
+T_0 ;
+    %delay 80, 0;
+    %vpi_call 2 6 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0000000002867bd0;
+T_1 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000000000089e760_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000000028ba9d0_0, 0, 1;
+    %delay 20, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000000000089e760_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000000028ba9d0_0, 0, 1;
+    %delay 20, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000000000089e760_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000000028ba9d0_0, 0, 1;
+    %delay 20, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000000000089e760_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000000028ba9d0_0, 0, 1;
+    %end;
+    .thread T_1;
+    .scope S_0000000002867bd0;
+T_2 ;
+    %vpi_call 2 16 "$dumpfile", "t_Lab2_half_sub.vcd" {0 0 0};
+    %vpi_call 2 17 "$dumpvars" {0 0 0};
+    %end;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "t_Lab2_half_sub.v";
+    "Lab2_half_sub_gatelevel.v";

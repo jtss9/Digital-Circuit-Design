@@ -1,0 +1,487 @@
+$date
+	Fri May 06 07:17:01 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module t_Lab2_4_bit_sub $end
+$var wire 1 ! bout $end
+$var wire 4 " D [3:0] $end
+$var reg 4 # A [3:0] $end
+$var reg 4 $ B [3:0] $end
+$var reg 1 % bin $end
+$scope module RBS $end
+$var wire 4 & A [3:0] $end
+$var wire 4 ' B [3:0] $end
+$var wire 1 % bin $end
+$var wire 1 ! bout $end
+$var wire 1 ( bin3 $end
+$var wire 1 ) bin2 $end
+$var wire 1 * bin1 $end
+$var wire 4 + D [3:0] $end
+$scope module FS1 $end
+$var wire 1 , a $end
+$var wire 1 - b $end
+$var wire 1 % bin $end
+$var wire 1 * bout $end
+$var wire 1 . w3 $end
+$var wire 1 / w2 $end
+$var wire 1 0 w1 $end
+$var wire 1 1 diff $end
+$scope module HS1 $end
+$var wire 1 , a $end
+$var wire 1 2 a_not $end
+$var wire 1 - b $end
+$var wire 1 / bout $end
+$var wire 1 0 diff $end
+$upscope $end
+$scope module HS2 $end
+$var wire 1 0 a $end
+$var wire 1 3 a_not $end
+$var wire 1 % b $end
+$var wire 1 . bout $end
+$var wire 1 1 diff $end
+$upscope $end
+$upscope $end
+$scope module FS2 $end
+$var wire 1 4 a $end
+$var wire 1 5 b $end
+$var wire 1 * bin $end
+$var wire 1 ) bout $end
+$var wire 1 6 w3 $end
+$var wire 1 7 w2 $end
+$var wire 1 8 w1 $end
+$var wire 1 9 diff $end
+$scope module HS1 $end
+$var wire 1 4 a $end
+$var wire 1 : a_not $end
+$var wire 1 5 b $end
+$var wire 1 7 bout $end
+$var wire 1 8 diff $end
+$upscope $end
+$scope module HS2 $end
+$var wire 1 8 a $end
+$var wire 1 ; a_not $end
+$var wire 1 * b $end
+$var wire 1 6 bout $end
+$var wire 1 9 diff $end
+$upscope $end
+$upscope $end
+$scope module FS3 $end
+$var wire 1 < a $end
+$var wire 1 = b $end
+$var wire 1 ) bin $end
+$var wire 1 ( bout $end
+$var wire 1 > w3 $end
+$var wire 1 ? w2 $end
+$var wire 1 @ w1 $end
+$var wire 1 A diff $end
+$scope module HS1 $end
+$var wire 1 < a $end
+$var wire 1 B a_not $end
+$var wire 1 = b $end
+$var wire 1 ? bout $end
+$var wire 1 @ diff $end
+$upscope $end
+$scope module HS2 $end
+$var wire 1 @ a $end
+$var wire 1 C a_not $end
+$var wire 1 ) b $end
+$var wire 1 > bout $end
+$var wire 1 A diff $end
+$upscope $end
+$upscope $end
+$scope module FS4 $end
+$var wire 1 D a $end
+$var wire 1 E b $end
+$var wire 1 ( bin $end
+$var wire 1 ! bout $end
+$var wire 1 F w3 $end
+$var wire 1 G w2 $end
+$var wire 1 H w1 $end
+$var wire 1 I diff $end
+$scope module HS1 $end
+$var wire 1 D a $end
+$var wire 1 J a_not $end
+$var wire 1 E b $end
+$var wire 1 G bout $end
+$var wire 1 H diff $end
+$upscope $end
+$scope module HS2 $end
+$var wire 1 H a $end
+$var wire 1 K a_not $end
+$var wire 1 ( b $end
+$var wire 1 F bout $end
+$var wire 1 I diff $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+xK
+1J
+xI
+xH
+xG
+xF
+1E
+0D
+xC
+1B
+xA
+x@
+x?
+x>
+1=
+0<
+x;
+1:
+x9
+x8
+x7
+x6
+05
+04
+x3
+12
+x1
+x0
+x/
+x.
+0-
+0,
+bx +
+x*
+x)
+x(
+b1100 '
+b0 &
+1%
+b1100 $
+b0 #
+bx "
+x!
+$end
+#2
+0/
+07
+1?
+1G
+#4
+13
+1;
+0C
+0K
+1(
+1!
+00
+08
+1@
+1H
+#6
+1.
+0>
+0F
+#8
+1*
+11
+b0xx1 "
+b0xx1 +
+0I
+#10
+16
+#12
+1)
+b0x11 "
+b0x11 +
+19
+#16
+b11 "
+b11 +
+0A
+#40
+02
+15
+0=
+0E
+1,
+b10 $
+b10 '
+b1 #
+b1 &
+#42
+17
+0?
+0G
+#44
+0;
+1C
+1K
+03
+0(
+0!
+18
+0@
+0H
+10
+#46
+06
+1>
+0.
+#48
+1(
+0*
+09
+1A
+b100 "
+b100 +
+01
+#50
+1F
+#52
+1!
+1I
+b1110 "
+b1110 +
+19
+#80
+0:
+1=
+14
+b110 $
+b110 '
+b11 #
+b11 &
+#82
+07
+1?
+#84
+0C
+1;
+0)
+1@
+08
+#86
+0>
+#88
+b1100 "
+b1100 +
+09
+#120
+1:
+0B
+1-
+0=
+1E
+04
+1<
+0%
+b1011 $
+b1011 '
+b101 #
+b101 &
+#122
+17
+0?
+1G
+#124
+13
+0K
+0;
+1)
+0(
+00
+1H
+18
+b1101 "
+b1101 +
+11
+#126
+0F
+#128
+0A
+01
+b1010 "
+b1010 +
+19
+#160
+0:
+0-
+14
+1%
+b1010 $
+b1010 '
+b111 #
+b111 &
+#162
+07
+1.
+#164
+03
+1;
+0)
+1*
+10
+08
+b1011 "
+b1011 +
+11
+#166
+0.
+16
+#168
+0*
+1)
+1A
+b1110 "
+b1110 +
+01
+#170
+06
+#172
+0)
+09
+b1000 "
+b1000 +
+0A
+#176
+b1100 "
+b1100 +
+1A
+#200
+12
+1:
+1B
+0J
+1-
+05
+0E
+0,
+04
+0<
+1D
+0%
+b1 $
+b1 '
+b1000 #
+b1000 &
+#202
+1/
+0G
+#204
+1C
+1*
+0!
+0@
+b1101 "
+b1101 +
+11
+#206
+16
+#208
+1)
+19
+b1011 "
+b1011 +
+0A
+#210
+1>
+#212
+1(
+b1111 "
+b1111 +
+1A
+#216
+b111 "
+b111 +
+0I
+#240
+02
+0:
+0-
+15
+1=
+1,
+14
+b110 $
+b110 '
+b1011 #
+b1011 &
+#242
+0/
+1?
+#244
+0C
+0*
+1@
+#246
+0>
+06
+#248
+0)
+09
+b1 "
+b1 +
+0A
+#252
+b101 "
+b101 +
+1A
+#280
+0B
+1-
+1E
+1<
+1%
+b1111 $
+b1111 '
+b1111 #
+b1111 &
+#282
+0?
+#284
+13
+1K
+1C
+0(
+00
+0H
+0@
+b100 "
+b100 +
+01
+#286
+1.
+#288
+1*
+11
+b1 "
+b1 +
+0A
+#290
+16
+#292
+1)
+b11 "
+b11 +
+19
+#294
+1>
+#296
+1(
+b111 "
+b111 +
+1A
+#298
+1F
+#300
+1!
+b1111 "
+b1111 +
+1I
+#320

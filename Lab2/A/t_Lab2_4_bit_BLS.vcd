@@ -1,0 +1,481 @@
+$date
+	Sat May 07 03:11:56 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module t_Lab2_4_bit_sub $end
+$var wire 1 ! bout_g $end
+$var wire 1 " bout_d $end
+$var wire 1 # bout_b $end
+$var wire 4 $ D_g [3:0] $end
+$var wire 4 % D_d [3:0] $end
+$var wire 4 & D_b [3:0] $end
+$var reg 4 ' A [3:0] $end
+$var reg 4 ( B [3:0] $end
+$var reg 1 ) bin $end
+$scope module BLS_behavioral $end
+$var wire 4 * A [3:0] $end
+$var wire 4 + B [3:0] $end
+$var wire 1 ) bin $end
+$var reg 4 , D [3:0] $end
+$var reg 1 - b0 $end
+$var reg 1 . b1 $end
+$var reg 1 / b2 $end
+$var reg 1 # bout $end
+$var reg 4 0 g [0:3] $end
+$var reg 4 1 p [0:3] $end
+$upscope $end
+$scope module BLS_dataflow $end
+$var wire 4 2 A [3:0] $end
+$var wire 4 3 B [3:0] $end
+$var wire 1 4 b0 $end
+$var wire 1 5 b1 $end
+$var wire 1 6 b2 $end
+$var wire 1 ) bin $end
+$var wire 1 " bout $end
+$var wire 4 7 p [0:3] $end
+$var wire 4 8 g [0:3] $end
+$var wire 4 9 D [3:0] $end
+$upscope $end
+$scope module BLS_gatelevel $end
+$var wire 4 : A [3:0] $end
+$var wire 4 ; B [3:0] $end
+$var wire 1 < b0 $end
+$var wire 1 = b1 $end
+$var wire 1 > b2 $end
+$var wire 1 ) bin $end
+$var wire 1 ! bout $end
+$var wire 1 ? g0 $end
+$var wire 1 @ g1 $end
+$var wire 1 A g2 $end
+$var wire 1 B g3 $end
+$var wire 1 C p0 $end
+$var wire 1 D p1 $end
+$var wire 1 E p2 $end
+$var wire 1 F p3 $end
+$var wire 1 G t0 $end
+$var wire 1 H t1 $end
+$var wire 1 I t2 $end
+$var wire 1 J t3 $end
+$var wire 1 K t4 $end
+$var wire 1 L t5 $end
+$var wire 1 M t6 $end
+$var wire 1 N t7 $end
+$var wire 1 O w0 $end
+$var wire 1 P w1 $end
+$var wire 1 Q w2 $end
+$var wire 1 R w3 $end
+$var wire 4 S D [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx S
+1R
+1Q
+1P
+1O
+xN
+xM
+xL
+xK
+xJ
+xI
+xH
+xG
+xF
+xE
+xD
+xC
+xB
+xA
+x@
+x?
+x>
+x=
+x<
+b1100 ;
+b0 :
+b11 9
+b11 8
+b1111 7
+16
+15
+14
+b1100 3
+b0 2
+b1111 1
+b11 0
+1/
+1.
+1-
+b11 ,
+b1100 +
+b0 *
+1)
+b1100 (
+b0 '
+b11 &
+b11 %
+bx $
+1#
+1"
+x!
+$end
+#2
+0?
+0@
+1A
+1B
+1C
+1D
+1E
+1F
+#4
+1>
+1!
+1K
+0G
+0H
+1I
+1J
+#6
+1N
+1<
+#8
+1L
+b0xx1 $
+b0xx1 S
+#10
+1=
+b0x11 $
+b0x11 S
+#12
+1M
+#14
+b11 $
+b11 S
+#50
+04
+b1110 %
+b1110 9
+b100 8
+b111 7
+0O
+b1110 &
+b1110 ,
+0-
+b111 1
+b100 0
+b10 (
+b10 +
+b10 3
+b10 ;
+b1 '
+b1 *
+b1 2
+b1 :
+#52
+0C
+1@
+0A
+0B
+#54
+0K
+1H
+0I
+0J
+1G
+#56
+0<
+#58
+0L
+b1110 $
+b1110 S
+#100
+05
+b1100 %
+b1100 9
+b10 8
+0P
+b1100 &
+b1100 ,
+0.
+b10 0
+b110 (
+b110 +
+b110 3
+b110 ;
+b11 '
+b11 *
+b11 2
+b11 :
+#102
+0@
+1A
+#104
+0=
+1I
+0H
+#106
+0M
+#108
+b1100 $
+b1100 S
+#150
+15
+06
+b101 8
+b1101 7
+1P
+0Q
+b1010 %
+b1010 9
+b1010 &
+b1010 ,
+0/
+1.
+b1101 1
+b101 0
+0)
+b1011 (
+b1011 +
+b1011 3
+b1011 ;
+b101 '
+b101 *
+b101 2
+b101 :
+#152
+1@
+0A
+1B
+1C
+0E
+#154
+1=
+0>
+0G
+1J
+1H
+b1101 $
+b1101 S
+#156
+0N
+#158
+b1010 $
+b1010 S
+#200
+05
+04
+b101 7
+b1 8
+0P
+b1100 %
+b1100 9
+b1100 &
+b1100 ,
+0.
+b101 1
+b1 0
+1)
+b1010 (
+b1010 +
+b1010 3
+b1010 ;
+b111 '
+b111 *
+b111 2
+b111 :
+#202
+0@
+0C
+1K
+#204
+0=
+0K
+1<
+1G
+0H
+b1011 $
+b1011 S
+#206
+0<
+1L
+#208
+0L
+1=
+b1110 $
+b1110 S
+#210
+0=
+b1100 $
+b1100 S
+#250
+16
+15
+14
+0"
+b1000 8
+b1110 7
+1O
+1P
+1Q
+0R
+b111 %
+b111 9
+b111 &
+b111 ,
+0#
+1/
+1.
+1-
+b1110 1
+b1000 0
+0)
+b1 (
+b1 +
+b1 3
+b1 ;
+b1000 '
+b1000 *
+b1000 2
+b1000 :
+#252
+1E
+1?
+0B
+1C
+0F
+#254
+1<
+0!
+0I
+b1101 $
+b1101 S
+#256
+1L
+#258
+1=
+b1011 $
+b1011 S
+#260
+1M
+#262
+1>
+b1111 $
+b1111 S
+#266
+b111 $
+b111 S
+#300
+05
+04
+b101 %
+b101 9
+b10 8
+b110 7
+0O
+0P
+b101 &
+b101 ,
+0.
+0-
+b110 1
+b10 0
+b110 (
+b110 +
+b110 3
+b110 ;
+b1011 '
+b1011 *
+b1011 2
+b1011 :
+#302
+0?
+1A
+0C
+#304
+0<
+1I
+#306
+0L
+#308
+0=
+b1 $
+b1 S
+#310
+0M
+#312
+b101 $
+b101 S
+#350
+1"
+15
+14
+16
+b1111 7
+b0 8
+0Q
+b1111 %
+b1111 9
+b1111 &
+b1111 ,
+1#
+1.
+1-
+b1111 1
+b0 0
+1)
+b1111 (
+b1111 +
+b1111 3
+b1111 ;
+b1111 '
+b1111 *
+b1111 2
+b1111 :
+#352
+0A
+1C
+1F
+#354
+0>
+1K
+1N
+0G
+0J
+0I
+b100 $
+b100 S
+#356
+0N
+1<
+1!
+#358
+0!
+1L
+b1 $
+b1 S
+#360
+1=
+b11 $
+b11 S
+#362
+1M
+#364
+1>
+b111 $
+b111 S
+#366
+1N
+#368
+1!
+b1111 $
+b1111 S
+#400

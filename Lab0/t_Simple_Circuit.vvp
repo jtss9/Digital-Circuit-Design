@@ -1,0 +1,62 @@
+#! c:/iverilog-x64/bin/vvp
+:ivl_version "10.1 (stable)" "(v10_1_1)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_00000000028469b0 .scope module, "t_Simple_Circuit" "t_Simple_Circuit" 2 1;
+ .timescale 0 0;
+v00000000028a14b0_0 .var "A", 0 0;
+v00000000028a1550_0 .var "B", 0 0;
+v00000000028a15f0_0 .var "C", 0 0;
+v00000000028a1690_0 .net "D", 0 0, L_00000000028a17d0;  1 drivers
+v00000000028a1730_0 .net "E", 0 0, L_0000000002812880;  1 drivers
+S_000000000094dbe0 .scope module, "M1" "Simple_Circuit" 2 6, 3 1 0, S_00000000028469b0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "A"
+    .port_info 1 /INPUT 1 "B"
+    .port_info 2 /INPUT 1 "C"
+    .port_info 3 /OUTPUT 1 "D"
+    .port_info 4 /OUTPUT 1 "E"
+L_0000000002846bd0 .functor AND 1, v00000000028a14b0_0, v00000000028a1550_0, C4<1>, C4<1>;
+L_0000000002812880 .functor NOT 1, v00000000028a15f0_0, C4<0>, C4<0>, C4<0>;
+L_00000000028a17d0 .functor OR 1, L_0000000002846bd0, L_0000000002812880, C4<0>, C4<0>;
+v0000000002846b30_0 .net "A", 0 0, v00000000028a14b0_0;  1 drivers
+v000000000094dd60_0 .net "B", 0 0, v00000000028a1550_0;  1 drivers
+v000000000094de00_0 .net "C", 0 0, v00000000028a15f0_0;  1 drivers
+v000000000094dea0_0 .net "D", 0 0, L_00000000028a17d0;  alias, 1 drivers
+v000000000094df40_0 .net "E", 0 0, L_0000000002812880;  alias, 1 drivers
+v00000000028a1410_0 .net "w1", 0 0, L_0000000002846bd0;  1 drivers
+    .scope S_00000000028469b0;
+T_0 ;
+    %vpi_call 2 10 "$dumpfile", "t_Simple_Circuit.vcd" {0 0 0};
+    %vpi_call 2 11 "$dumpvars" {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000000028a14b0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000000028a1550_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000000028a15f0_0, 0, 1;
+    %delay 100, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000000028a14b0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000000028a1550_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000000028a15f0_0, 0, 1;
+    %end;
+    .thread T_0;
+    .scope S_00000000028469b0;
+T_1 ;
+    %delay 200, 0;
+    %vpi_call 2 15 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "t_Simple_Circuit.v";
+    "Simple_Circuit.v";

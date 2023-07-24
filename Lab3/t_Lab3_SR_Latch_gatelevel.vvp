@@ -1,0 +1,84 @@
+#! c:/iverilog-x64/bin/vvp
+:ivl_version "10.1 (stable)" "(v10_1_1)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0000000002848ca0 .scope module, "t_Lab3_SR_Latch_gatelevel" "t_Lab3_SR_Latch_gatelevel" 2 1;
+ .timescale 0 0;
+v00000000011eea70_0 .net "Q", 0 0, L_000000000289af50;  1 drivers
+v00000000011eeb10_0 .net "Qb", 0 0, L_00000000011e7a50;  1 drivers
+v00000000011eebb0_0 .var "R", 0 0;
+v00000000011eec50_0 .var "S", 0 0;
+S_0000000002849e50 .scope module, "SR" "Lab3_SR_Latch_gatelevel" 2 4, 3 1 0, S_0000000002848ca0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "S"
+    .port_info 1 /INPUT 1 "R"
+    .port_info 2 /OUTPUT 1 "Q"
+    .port_info 3 /OUTPUT 1 "Qb"
+L_000000000289af50/d .functor NOR 1, v00000000011eebb0_0, L_00000000011e7a50, C4<0>, C4<0>;
+L_000000000289af50 .delay 1 (10,10,10) L_000000000289af50/d;
+L_00000000011e7a50/d .functor NOR 1, L_000000000289af50, v00000000011eec50_0, C4<0>, C4<0>;
+L_00000000011e7a50 .delay 1 (10,10,10) L_00000000011e7a50/d;
+v0000000002849fd0_0 .net "Q", 0 0, L_000000000289af50;  alias, 1 drivers
+v000000000289aeb0_0 .net "Qb", 0 0, L_00000000011e7a50;  alias, 1 drivers
+v000000000284a070_0 .net "R", 0 0, v00000000011eebb0_0;  1 drivers
+v000000000284a110_0 .net "S", 0 0, v00000000011eec50_0;  1 drivers
+    .scope S_0000000002848ca0;
+T_0 ;
+    %delay 250, 0;
+    %vpi_call 2 6 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0000000002848ca0;
+T_1 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000000011eec50_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000000011eebb0_0, 0, 1;
+    %delay 30, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000000011eec50_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000000011eebb0_0, 0, 1;
+    %delay 30, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000000011eec50_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000000011eebb0_0, 0, 1;
+    %delay 30, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000000011eec50_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000000011eebb0_0, 0, 1;
+    %delay 30, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000000011eec50_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000000011eebb0_0, 0, 1;
+    %delay 50, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000000011eec50_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000000011eebb0_0, 0, 1;
+    %delay 30, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000000011eec50_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000000011eebb0_0, 0, 1;
+    %end;
+    .thread T_1;
+    .scope S_0000000002848ca0;
+T_2 ;
+    %vpi_call 2 18 "$dumpfile", "t_Lab3_SR_Latch_gatelevel.vcd" {0 0 0};
+    %vpi_call 2 19 "$dumpvars" {0 0 0};
+    %end;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "t_Lab3_SR_Latch_gatelevel.v";
+    "Lab3_SR_Latch_gatelevel.v";
